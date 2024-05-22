@@ -1,0 +1,10 @@
+﻿@model PersonModel
+<h3>Thông Tin Đăng Ký</h3>
+<hr />
+<ul>
+    <li>Họ Tên: @Model.FullName</li>
+    <li>Ngày Sinh: @Model.BirthDay</li>
+    <li>Hình Nền: 
+        <img src="/images/@Model.Picture" width="200px"/>
+    </li>
+</ul>

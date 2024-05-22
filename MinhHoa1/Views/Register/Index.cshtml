@@ -1,0 +1,24 @@
+﻿@model PersonModel
+<h1>THÔNG TIN ĐĂNG KÝ</h1>
+<br />
+<div class="container p-5 my-5 border">
+    <form method="post" asp-action="XuLy" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label>Họ Tên</label>
+            <input asp-for="FullName" class="form-control" />
+        </div>
+        <br />
+        <div class="form-group">
+            <label>Ngày Sinh</label>
+            <input asp-for="BirthDay" type="date" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Hình</label>
+            <input name="fHinh" type="file" class="form-control" />
+        </div>
+        <br />
+        <button type="submit" class="btn badge-success">Đăng Ký</button>
+        @*Kết quả phép tính là ViewPag:<strong>@ViewBag.KQ</strong>*@
+    </form>
+</div>
